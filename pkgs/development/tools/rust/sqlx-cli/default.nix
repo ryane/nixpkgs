@@ -21,7 +21,7 @@ rustPlatform.buildRustPackage rec {
     owner = "launchbadge";
     repo = "sqlx";
     rev = "v${version}";
-    sha256 = "";
+    sha256 = "sha256-f9DCavvqq/a+1wusKlc3jOjyFRVMIAHGCryZxV5qews=";
   };
 
   patches = [
