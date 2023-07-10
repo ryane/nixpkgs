@@ -24,14 +24,14 @@ rustPlatform.buildRustPackage rec {
     sha256 = "sha256-f9DCavvqq/a+1wusKlc3jOjyFRVMIAHGCryZxV5qews=";
   };
 
-  patches = [
-    # https://github.com/launchbadge/sqlx/pull/2228
-    (fetchpatch {
-      name = "fix-rust-1.65-compile.patch";
-      url = "https://github.com/launchbadge/sqlx/commit/2fdf85b212332647dc4ac47e087df946151feedf.patch";
-      hash = "sha256-5BCuIwmECe9qQrdYll7T+UOGwuTBolWEhKNE7GcZqJw=";
-    })
-  ];
+  # patches = [
+  #   # https://github.com/launchbadge/sqlx/pull/2228
+  #   (fetchpatch {
+  #     name = "fix-rust-1.65-compile.patch";
+  #     url = "https://github.com/launchbadge/sqlx/commit/2fdf85b212332647dc4ac47e087df946151feedf.patch";
+  #     hash = "sha256-5BCuIwmECe9qQrdYll7T+UOGwuTBolWEhKNE7GcZqJw=";
+  #   })
+  # ];
 
   cargoSha256 = "sha256-9vbrehtfw6ctIF7uXZPvODx3kkxz+m9h2Uv+2t45I0w=";
 
